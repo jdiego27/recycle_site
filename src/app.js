@@ -11,13 +11,13 @@ const app = express();
 //require('./passport/local-auth');
 
 
-
+/*
 //Connecting to db TO MY LOCAL
 mongoose.connect('mongodb://localhost/BCHPEDB', {useNewUrlParser: true});
 mongoose.connection
 .once('open', () => console.log('Local DB is connected'))
 .on('error',err => console.log('Your', err));
-
+*/
 
 
 /*
