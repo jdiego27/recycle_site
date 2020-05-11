@@ -1,0 +1,30 @@
+{
+  "name": "recycle_site",
+  "version": "1.0.0",
+  "description": "This is a website regarding recycling",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdiego27/recycle_site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdiego27/recycle_site/issues"
+  },
+  "homepage": "https://github.com/jdiego27/recycle_site#readme",
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.13",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
