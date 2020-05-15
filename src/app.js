@@ -42,7 +42,7 @@ app.set('view engine', 'ejs');
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
 app.use(express.static(publicDir));
-app.use(express.static(__dirname + '/images'));
+app.use(express.static(__dirname + '/public/images'));
 
 
 
