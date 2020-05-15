@@ -4,45 +4,41 @@
     <h1 class="display-3 text-wrap">Welcome to Recycling </h1>
 </div>
 
-<div id="tabs">
-    <ul>
-      <li><a href="#tabs-1">Acerca de</a></li>
-      <li><a href="#tabs-2">Información</a></li>
-      <li><a href="#tabs-3">Contacto</a></li>
-    </ul>
-    <div id="tabs-1">
-      <p>Nuestra empresa se encarga de hacer reciclaje.</p>
-    </div>
-    <div id="tabs-2">
-      <p>Necesitamos de la recoleccion de residuos para vivir felices y generar ganancias. Apoyando al medio ambiente.</p>
-      <a href="contact.ejs"></a>
-    </div>
-    <div id="tabs-3">      
-      <h3>Formulario de Contacto</h3>
-
-      <p>Para mayor información, pueden llenar el siguiente formulario</p>
-
 <div class="container">
-  <form action="/action_page.php">
-    <label for="fname">Nombres</label>
-    <input type="text" id="fname" name="firstname" placeholder="Nombres..">
+  <div id="modal-1">
+    <div class="box-menu">
+      <ul>
+        <li class="active"><a href="#start"><i class="fa fa-home" aria-hidden="true"></i> Start</a></li>
+        <li><a href="#about"><i class="fa fa-info" aria-hidden="true"></i> About</a></li>
+        <li><a href="#settings"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+        <li><a href="#close" id="close"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+      </ul>
+    </div>
+    <div class="tab-content">
+      <div class="box" id="start">
+        <h2>Hello there</h2>
+        <img class="grow" src="http://i.giphy.com/fSPV4dio5ioRa.gif" alt="" />
+        <p>I'm just a cute little box with a menu. I'm also fully responsive. Use it as you wish!</p>
+      </div>
+      <div class="box" id="about">
+        <h2>What we do</h2>
+        <p class="ingres">Turducken kevin drumstick pork chop, turkey flank fatback andouille. Prosciutto kevin strip steak rump short ribs. Ham pork belly turducken swine kielbasa short ribs beef tri-tip hamburger ribeye. Meatball landjaeger short loin, shankle leberkas
+          brisket shoulder bacon picanha pork belly. Jowl jerky boudin bacon short ribs biltong, tenderloin flank kevin cow. Tenderloin pork pancetta, salami ribeye pork loin leberkas spare ribs. Ribeye swine filet mignon, cow biltong tenderloin sausage.</p>
 
-    <label for="lname">Apellidos</label>
-    <input type="text" id="lname" name="lastname" placeholder="Apellidos..">
-
-    <label for="country">Distrito</label>
-    <select id="country" name="country">
-      <option value="australia">Lima</option>
-      <option value="canada">Surco</option>
-      <option value="usa">San Borja</option>
-    </select>
-
-    <label for="subject">Asunto</label>
-    <textarea id="subject" name="subject" placeholder="Escriba su motivo.." style="height:200px"></textarea>
-
-    <input type="submit" value="Enviar">
-  </form>
-</div>  
+        <p>Leberkas alcatra t-bone boudin jowl brisket tongue frankfurter shank. Venison filet mignon cow tri-tip tail doner boudin bacon ball tip shank turducken fatback prosciutto. Swine drumstick jerky, ham hock tenderloin shank sausage.</p>
+      </div>
+      <div class="box" id="settings">
+        <h2>Settings</h2>
+        <form>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="New Password" />
+          <input type="password" placeholder="Confirm Password" />
+          <button class="submit">Save</button>
+        </form>
+      </div>
     </div>
   </div>
+</div>
+
+<a href="#" class="openit"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
 
