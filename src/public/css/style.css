@@ -189,5 +189,5 @@ a i {
 /*Jumbotron*/
 
 .jumbotron {
-  background-color:#01C346;
+  background-color:#01C346 !important;
 }
