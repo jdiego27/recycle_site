@@ -34,6 +34,7 @@ const indexRoutes = require('./routes/index');
 
 // Settings
 app.set('port', process.env.PORT || 3000);
+app.use(express.static(__dirname + '/public'));
 app.set('views', path.join(__dirname, 'views'));
 
 app.set('view engine', 'ejs');
@@ -42,8 +43,6 @@ app.set('view engine', 'ejs');
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
 app.use(express.static(publicDir));
-app.use(express.static(__dirname + '/public/images'));
-
 
 
 //routes
