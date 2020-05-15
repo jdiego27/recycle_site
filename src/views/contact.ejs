@@ -1,123 +1,33 @@
-
-<html>
-<head>
-    <title>Bootstrap Contact Form With Captcha | Html Hints</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,500' rel='stylesheet' type='text/css'>
-    <link href='custom.css' rel='stylesheet' type='text/css'>
-    <link rel="icon" type="image/png" href="https://www.htmlhints.com/image/fav-icon.png">
-    <meta name="msvalidate.01" content="B7807734CA7AACC0779B341BBB766A4E" />
-    <meta name="p:domain_verify" content="78ad0b4e41a4f27490d91585cb10df4a"/>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({
-              google_ad_client: "ca-pub-1506739985879215",
-              enable_page_level_ads: true
-         });
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145078782-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'UA-145078782-1');
-    </script>
-    <style>
-    .list-unstyled {
-        color: red;
-    }
-    </style>
-</head>
+<%- include ('partials/_header.ejs'); %>
 
 <body>
-    <div class="container">
+<div class="jumbotron text-center mb-4 text-uppercase" style="margin-bottom:0"> 
+    <h1 class="display-3 text-wrap">Welcome to Recycling </h1>
+</div>
 
-        <div class="row">
-
-            <div class="col-xl-8 offset-xl-2">
-
-                <h1 class="mb-3">Bootstrap Contact Form With Captcha </h1>
-
-
-                <form id="contact-form" method="post" action="https://www.htmlhints.com/recaptcha/contact" role="form">
-
-                    <div class="messages"></div>
-
-                    <div class="controls">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="form_name">Firstname *</label>
-                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required"
-                                        data-error="Firstname is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="form_lastname">Lastname *</label>
-                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required"
-                                        data-error="Lastname is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="form_email">Email *</label>
-                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required"
-                                        data-error="Valid email is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="form_phone">Phone</label>
-                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="form_message">Message *</label>
-                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required"
-                                data-error="Please, leave us a message."></textarea>
-                            <div class="help-block with-errors"></div>
-                        </div>
-
-
-                        <div class="form-group">
-                            <div class="g-recaptcha" data-sitekey="Your site key" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-                            <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
-                            <div class="help-block with-errors"></div>
-                        </div>
-
-
-                        <input type="submit" class="btn btn-success btn-send" value="Send message">
-
-                    </div>
-
-                </form>
-
-            </div>
-            <!-- /.8 -->
-
-        </div>
-        <!-- /.row-->
-
+<div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a href="#test1">Test 1</a></li>
+        <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+        <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+        <li class="tab col s3"><a href="#test4">Test 4</a></li>
+      </ul>
     </div>
-    <!-- /.container-->
+    <div id="test1" class="col s12">Test 1</div>
+    <div id="test2" class="col s12">Test 2</div>
+    <div id="test3" class="col s12">Test 3</div>
+    <div id="test4" class="col s12">Test 4</div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script src="validator.js"></script>
-    <script src="contact.js"></script>
+<script>
+    var instance = M.Tabs.init(el, options);
+
+// Or with jQuery
+
+$(document).ready(function(){
+  $('.tabs').tabs();
+});
+</script>
+
 </body>
-
-</html>
