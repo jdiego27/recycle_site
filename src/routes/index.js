@@ -16,4 +16,8 @@ const engine = require('ejs');
 
 module.exports = router;
 
+router.get('/contact', function(req, res) {
+  res.render('contact');
+});
+
 
