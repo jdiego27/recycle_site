@@ -185,3 +185,9 @@ a i {
   transform: translateY(0px) scale(1);
   opacity: 1;
 }
+
+/*Jumbotron*/
+
+.jumbotron {
+  background-color:#01C346;
+}
