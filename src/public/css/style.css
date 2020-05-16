@@ -13,3 +13,7 @@ ul, il {
 a, a:hover {
     color: black;
 }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    border: 0;
+}
