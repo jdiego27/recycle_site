@@ -1,0 +1,15 @@
+.nav-link {
+    background-color: white;
+}
+
+a.active.nav-link {
+    background-color: #00E149 !important;
+}
+
+ul, il {
+    color: black;
+}
+
+a, a:hover {
+    color: black;
+}
