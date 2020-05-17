@@ -8,12 +8,12 @@ a.active.nav-link {
 
 ul {
     color: black;
-    border-bottom: none;
+    border-bottom: none !important;
 }
 
 a, a:hover {
     color: black;   
-    border-bottom: none; 
+    border-bottom: none !important;
 }
 
 .jumbotron {
